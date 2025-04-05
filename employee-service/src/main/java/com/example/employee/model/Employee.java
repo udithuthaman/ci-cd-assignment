@@ -1,11 +1,15 @@
 package com.example.employee.model;
 
+
+
 public class Employee {
     private Long id;
     private String name;
     private String role;
 
     public Employee() {}
+    
+    
 
     public Employee(Long id, String name, String role) {
         this.id = id;
@@ -21,4 +25,7 @@ public class Employee {
 
     public String getRole() { return role; }
     public void setRole(String role) { this.role = role; }
+    
+    
 }
+
