@@ -27,4 +27,10 @@ public class EmployeeControllerTest {
         ResponseEntity<Employee[]> listResponse = restTemplate.getForEntity("/employees", Employee[].class);
         assertTrue(Objects.requireNonNull(listResponse.getBody()).length > 0);
     }
+    @Test
+    void testEmptyList() {
+        ResponseEntity<Employee[]> response = restTemplate.getForEntity("/employees", Employee[].class);
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+    }
+
 }
