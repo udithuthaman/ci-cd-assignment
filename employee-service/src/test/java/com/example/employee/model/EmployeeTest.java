@@ -4,6 +4,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class EmployeeTest {
+	
+	
+  @Test
+  void shouldFail() {
+      assertEquals(1, 2);
+  }
+
+	
 
     @Test
     void testEmployeeConstructorAndGetters() {
@@ -25,4 +33,6 @@ public class EmployeeTest {
         assertEquals("Bob", emp.getName());
         assertEquals("Tester", emp.getRole());
     }
+    
+    
 }
