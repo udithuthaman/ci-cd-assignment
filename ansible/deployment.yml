@@ -1,0 +1,17 @@
+- name: Deploy Employee Service Docker Container
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Stop old container (if running)
+      community.docker.docker_container:
+        name: employee-service
+        state: absent
+      ignore_errors: yes
+
+    - name: Run new container
+      community.docker.docker_container:
+        name: employee-service
+        image: employee-service
+        state: started
+        ports:
+          - "8093:8089"
