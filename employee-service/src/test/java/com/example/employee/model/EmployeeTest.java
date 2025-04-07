@@ -6,10 +6,10 @@ import static org.junit.jupiter.api.Assertions.*;
 public class EmployeeTest {
 	
 	
-  @Test
-  void shouldFail() {
-      assertEquals(1, 2);
-  }
+//  @Test
+//  void shouldFail() {
+//      assertEquals(1, 2);
+//  }
 
 	
 
