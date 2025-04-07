@@ -7,7 +7,10 @@ public class EmployeeTest {
 	
 	
 
-	
+  @Test
+  void shouldFail() {
+      assertEquals(1, 2);
+  }
 
     @Test
     void testEmployeeConstructorAndGetters() {
