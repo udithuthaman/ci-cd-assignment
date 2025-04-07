@@ -13,5 +13,5 @@
         name: employee-service
         image: employee-service
         state: started
-        ports:
+        published_ports:
           - "8093:8089"
